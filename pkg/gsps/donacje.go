@@ -38,23 +38,12 @@ type Donate struct {
 
 // GetDonations retrieves info about an event donations
 func (s Service) GetDonations(eventName string) (Donate, error) {
-	combinedURL, err := url.Parse(s.BaseURL) //url.JoinPath(baseURL,"donacje")
+	combinedURL, err := s.makeURL(eventName)
 	if err != nil {
 		return Donate{}, err
 	}
-	combinedURL = combinedURL.JoinPath("donacje")
-	combinedURL = combinedURL.JoinPath("index")
-	if eventName != "" {
-		combinedURL = combinedURL.JoinPath(eventName)
-	}
 
-	q := url.Values{}
-	q.Add("json", "stunt_gp")
-
-	combinedURL.RawQuery = q.Encode()
-
-	//fmt.Println(combinedURL.String())
-	resp, err := http.Get(combinedURL.String())
+	resp, err := http.Get(combinedURL)
 	if err != nil {
 		return Donate{}, err
 	}
@@ -73,6 +62,26 @@ func (s Service) GetDonations(eventName string) (Donate, error) {
 	err = json.Unmarshal(body, &donate)
 
 	return donate, err
+}
+
+func (s Service) makeURL(eventName string) (string, error) {
+
+	combinedURL, err := url.Parse(s.BaseURL)
+	if err != nil {
+		return "", err
+	}
+	combinedURL = combinedURL.JoinPath("donacje")
+	combinedURL = combinedURL.JoinPath("index")
+	if eventName != "" {
+		combinedURL = combinedURL.JoinPath(eventName)
+	}
+
+	q := url.Values{}
+	q.Add("json", "stunt_gp")
+
+	combinedURL.RawQuery = q.Encode()
+
+	return combinedURL.String(), nil
 }
 
 // {
