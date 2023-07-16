@@ -1,4 +1,4 @@
-# Reffer to https://golangci-lint.run/usage/configuration/ for documentation
+# Refer to https://golangci-lint.run/usage/configuration/ for documentation
 run:
   tests: true
 output:

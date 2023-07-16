@@ -10,96 +10,80 @@ telegazeta to nazwa handlowa TVP - do 2013
 
 1989 w polsce, TVP
 
-# inne
+Bez kolorów:
+red - powrót do pocz. magazynu
+green - powrót do pocz. magazynu
+yellow - poprz. strona
+blue - nast strona
 
-# 100 - index
+# Strony
 
-# 200 - prezentacja
+- 100 - **Start**
+- 200 - **Prezentacja**
+  - 201 - Poziom 1 1976 - WST (Ceefax 1974)
+  - 202 - numeracja stron, magazyny (do 898)
+- 300 - **Dwa i pół** - poziom 2.5
+- 400 - **Różności**
+  - 401 - Nacu
+- 500 - **Harmonogram**
+- 600 - **Stunt GP**
+- 700 - **Strony testowe**
+  - 700 - tekst, miganie, kolory, G1, ukryty
+  - 701 - boxing
+  - 702 - 1.5 - polskie, G2, G3
+  - 703 - 2.5 - palette, redefine CLUT 2, 3
+- 747 - **Strony Testowe**
+- 800 - labirynt / **Quiz**
+  - 898 - Fastnav
+  - 899 - Ostatnia strona
+  - 89A - strony w hexach
 
-# 300 - poziom 2.5
-
-# 400 -
-
-# 500 - Harmonogram
-
-# 600 - Stunt GP
-
-# 700 - strony testowe
-
-- 1.0 - tekst, miganie, kolory, G1, ukryty
-- 1.0 - boxing
-- 1.0 - szybkie update'y (animacja?)
-- 1.5 - polskie, G2, G3
-- 2.5 - objects\*, kolory
-
-Opcjonalne:
-
-- custom znaczki (DRCS)
-
-# 747 - sgp?
-
-# 800 - labirynt / quiz
-
-# 899 - Ostatnia strona
-
-# 89A - strony w hexach
-
-# 100
-
-# Teletekst poziom 1
-
-# 101
-
-# fastnav
-
-# numeracja magazynów, stron
-
-8 magazynów
-100 -> 899 -> 89A
-
-jakiś prosty quiz?
-
-# podstrony
-
-# tekst, w tym polskie znaki (wspomnj i pokaż)
-
-## wysoki tekst
-
-# miagjacy tekst
-
-# ukryty tekst (STUNT GP)
-
-# 10X
-
-# Boxing / napisy
-
-# kolory
-
-"Spróbujemy zrobić prostą stronę GSPS"
-
-logo GSPS tekstem, "zebraliśmy juz xxx zł" - L1
-
-# mozaika
-
-logo GSPS G1, "zebraliśmy już xxx zł" - L1
+201 - Poziom 1
+202 - numeracja
+898 - fastnav,
+899 - ostatnia
+89A - 00 - FF
+podstrony
+Tekst, double height, migajacy, ukryty
+kolory
+LOGO GSPS tekst
+mozaika
+logo GSPS G1, "zebraliśmy już xxx zl" - L1
+boxing
+Zebralismy juz xxx zl - boxing
 
 Info o nieskończonej pętli stron, zmiana na LCD
 
-# Poziom 1.5
+- Poziom 1.5
+  logo GSPS G1, "zebraliśmy już xxx zł" - L1 - polskie znaki
+  G2, G3
+  logo GSPS G3, "zebraliśmy już xxx zł" - L1.5
 
-# Symbole G2, akcenty polskich znaków
+- Poziom 2.5
+  kolory
+  podwójny tekst, szeroki tekst, migający
+  migajacy na osobnej stronie, photosensitivity
+  logo GSPS G3 + kolory, "zebraliśmy już xxx zł" - L2 - domyślne kolory
+   <!-- Ale szybko poziom 2 został zatąpiony poziomem 2.5, który pozwalał na podmianę 16 kolorów na własne, z puli 4096 kolorów-->
+  logo GSPS G3 + kolory, "zebraliśmy już xxx zł" - L2.5
 
-# Mozaiki G3
+Nie pokazuję 3.5, bo nie mam sprzętu
 
-logo GSPS G3, "zebraliśmy już xxx zł" - L1
+## dodaj kod QR
 
-logo GSPS G3 + kolory, "zebraliśmy już xxx zł" - L2 - domyślne kolory
+# Pominięte
 
- <!-- Ale szybko poziom 2 został zatąpiony poziomem 2.5, który pozwalał na podmianę 16 kolorów na własne, z puli 4096 kolorów-->
+polskie znaki - tylko wspomnij, bez info o diakrytykaahc i X/26
 
-logo GSPS G3 + kolory, "zebraliśmy już xxx zł" - L2.5
+- 700
+  - 1.0 - szybkie update'y (animacja?)
+  - 2.5 - objects\*, kolory
+    - Opcjonalne
+      - custom znaczki (DRCS)
 
-,
+# TODO
+
+jakiś prosty quiz?
 
 | Element  |  kolor  | Kolor teletekstu |
 | :------- | :-----: | :--------------: |
@@ -107,3 +91,14 @@ logo GSPS G3 + kolory, "zebraliśmy już xxx zł" - L2.5
 | wewnątrz | #5a72ff |       #57f       |
 | tekst    | #ffffff |       #fff       |
 | kółko    | #224277 |       #247       |
+| www      | #41228e |       #428       |
+
+src/extension/bids.ts:15:const BIDS_URL = `${rootURL}/search?type=allbids&event=${eventID}`;
+src/extension/bids.ts:16:const CURRENT_BIDS_URL = `${rootURL}/search?type=allbids&event=${eventID}&state=OPENED`;
+src/extension/donations.ts:114: `${rootURL}/search?event=${eventID}&type=donation&feed=toread`,
+src/extension/donations.ts:137: `${rootURL}/search?event=${eventID}&type=donation&commentstate=PENDING&transactionstate=COMPLETED`,
+src/extension/donations.ts:144: `${rootURL}/search?event=${eventID}&type=bidtarget&state=PENDING`,
+src/extension/donations.ts:164: `${rootURL}/search?event=${config!.eventID}&type=donationbid`,
+src/extension/prizes.ts:39: `${rootURL}/search?event=${config!.eventID}&type=prize`,
+
+dzieciom 2023 - event 21
