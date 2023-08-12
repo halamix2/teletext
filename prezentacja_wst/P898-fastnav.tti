@@ -2,3 +2,8 @@ PN,89800
 SC,0000
 PS,8000
 CT,8,T
+OL,1, AMFASTNAVBMFASTNAVCMFASTNAVDMFASTNAV   
+OL,5,   MPrzyciski doAszybkiej nawigacji     
+OL,7,          Mpomiedzy stronami            
+OL,24, AWracamy BNaprzod  CStunt GP DIndeks   
+FL,202,899,600,100,1ff,1ff

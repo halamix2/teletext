@@ -18,10 +18,16 @@ blue - nast strona
 
 # Strony
 
+czytaj co zostało z TODO
+
 - 100 - **Start**
 - 200 - **Prezentacja**
   - 201 - Poziom 1 1976 - WST (Ceefax 1974)
   - 202 - numeracja stron, magazyny (do 898)
+  - 203 - podstrony (Natalia odpisz, zmienilem sie)
+  - 204 - formatowanie tekstu
+  - 205 - kolory
+  - 206 - GSPS tekst
 - 300 - **Dwa i pół** - poziom 2.5
 - 400 - **Różności**
   - 401 - Nacu
@@ -40,13 +46,13 @@ blue - nast strona
 
 201 - Poziom 1
 202 - numeracja
-898 - fastnav,
+898 - fastnav
 899 - ostatnia
 89A - 00 - FF
-podstrony
-Tekst, double height, migajacy, ukryty
-kolory
-LOGO GSPS tekst
+203 - podstrony
+204 - Tekst, double height, migajacy, ukryty
+205 - kolory
+206 - LOGO GSPS tekst
 mozaika
 logo GSPS G1, "zebraliśmy już xxx zl" - L1
 boxing
@@ -93,12 +99,12 @@ jakiś prosty quiz?
 | kółko    | #224277 |       #247       |
 | www      | #41228e |       #428       |
 
-src/extension/bids.ts:15:const BIDS_URL = `${rootURL}/search?type=allbids&event=${eventID}`;
-src/extension/bids.ts:16:const CURRENT_BIDS_URL = `${rootURL}/search?type=allbids&event=${eventID}&state=OPENED`;
-src/extension/donations.ts:114: `${rootURL}/search?event=${eventID}&type=donation&feed=toread`,
-src/extension/donations.ts:137: `${rootURL}/search?event=${eventID}&type=donation&commentstate=PENDING&transactionstate=COMPLETED`,
-src/extension/donations.ts:144: `${rootURL}/search?event=${eventID}&type=bidtarget&state=PENDING`,
-src/extension/donations.ts:164: `${rootURL}/search?event=${config!.eventID}&type=donationbid`,
-src/extension/prizes.ts:39: `${rootURL}/search?event=${config!.eventID}&type=prize`,
+- bids BIDS_URL = `/search?type=allbids&event=22`;
+- bids CURRENT_BIDS_URL = `/search?type=allbids&event=22&state=OPENED`;
+- donations `/search?event=22&type=donation&feed=toread`,
+- donations `/search?event=22&type=donation&commentstate=PENDING&transactionstate=COMPLETED`,
+- donations `/search?event=22&type=bidtarget&state=PENDING`,
+- donations `/search?event=22&type=donationbid`,
+- prizes `/search?event=22&type=prize`,
 
 dzieciom 2023 - event 21
