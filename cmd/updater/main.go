@@ -22,11 +22,11 @@ var (
 
 func setFlags() {
 	flag.DurationVar(&updateGSPSDelay, "delayGSPS", 30*time.Second, "time when to update GSPS data")
-	flag.DurationVar(&updateDelay, "delay", 500*time.Millisecond, "time when to update pages")
+	flag.DurationVar(&updateDelay, "delay", 5*time.Second, "time when to update pages")
 	flag.StringVar(&baseURL, "baseURL", "https://gsps.pl", "base GSPS URL")
 	flag.StringVar(&currentEvent, "currentEvent", "gsps2023", "base GSPS URL")
 	flag.StringVar(&inputDir, "input", "prezentacja_input", "input dir")
-	flag.StringVar(&outputDir, "output", "prezentacja_out", "output dir")
+	flag.StringVar(&outputDir, "output", "prezentacja_wst", "output dir")
 
 	flag.Parse()
 }
