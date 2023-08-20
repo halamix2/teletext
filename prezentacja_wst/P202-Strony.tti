@@ -2,10 +2,12 @@ PN,20200
 SC,0000
 PS,8000
 CT,8,T
+OL,28,@@P`gpCu_@|wKpZA`UB_wLs_w}ww]_}_wM@@
+OL,26,@iD@@oVAoVBoVCCCCCCCCC
 OL,1,^^^ Numer strony                        
 OL,3,              MA2B0 2                   
-OL,6,          MA8 magazynow 1 - 8           
+OL,6,          MA8 magazyn_w 1 - 8           
 OL,11,    MBStrony numerowane  0 0 - 9 9      
 OL,17,           MA1B0 0 -A8B9 9              
-OL,24,         B Ja chce na koniec!           
+OL,24,         B Ja chc` na koniec!           
 FL,200,899,200,203,1ff,1ff

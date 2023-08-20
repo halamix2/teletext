@@ -28,7 +28,11 @@ czytaj co zostało z TODO
   - 204 - formatowanie tekstu
   - 205 - kolory
   - 206 - GSPS tekst
-- 300 - **Dwa i pół** - poziom 2.5
+  - 207 - mozaika
+  - 208 - GSPS mozaika 1/1.5
+  - 209 - GSPS mozaika 1/1.5 G3
+  - 210 - GSPS mozaika 2.5 G3, kolory
+  - 300 - Indeks 2
 - 400 - **Różności**
   - 401 - Nacu
 - 500 - **Harmonogram**
@@ -44,7 +48,20 @@ czytaj co zostało z TODO
   - 899 - Ostatnia strona
   - 89A - strony w hexach
 
-201 - Poziom 1
+# TODO dodaj polskie znaki gdzie trzeba
+
+200 - kolor next
+
+202
+203
+4
+5
+6
+7
+
+todo licznik wpłat 100/300 za krótki 7 znaków
+
+201 - Poziom 1/1.5 - wspomnij o zmianach na bieżąco
 202 - numeracja
 898 - fastnav
 899 - ostatnia
@@ -53,17 +70,13 @@ czytaj co zostało z TODO
 204 - Tekst, double height, migajacy, ukryty
 205 - kolory
 206 - LOGO GSPS tekst
-mozaika
-logo GSPS G1, "zebraliśmy już xxx zl" - L1
-boxing
-Zebralismy juz xxx zl - boxing
+207 - mozaika
+208 - LOGO GSPS mozaika G1
+209 - LOGO GSPS mozaika G3
+210 - LOGO GSPS mozaika G3, kolory 2.5
+300 - Indeks 2
 
 Info o nieskończonej pętli stron, zmiana na LCD
-
-- Poziom 1.5
-  logo GSPS G1, "zebraliśmy już xxx zł" - L1 - polskie znaki
-  G2, G3
-  logo GSPS G3, "zebraliśmy już xxx zł" - L1.5
 
 - Poziom 2.5
   kolory
@@ -92,12 +105,12 @@ polskie znaki - tylko wspomnij, bez info o diakrytykaahc i X/26
 jakiś prosty quiz?
 
 | Element  |  kolor  | Kolor teletekstu |
-| :------- | :-----: | :--------------: |
-| zewnątrz | #0dcbff |       #0cf       |
-| wewnątrz | #5a72ff |       #57f       |
-| tekst    | #ffffff |       #fff       |
-| kółko    | #224277 |       #247       |
-| www      | #41228e |       #428       |
+| :------- | :-----: | :--------------: | --- |
+| zewnątrz | #0dcbff |       #0cf       | 0   |
+| wewnątrz | #5a72ff |       #57f       | 1   |
+| tekst    | #ffffff |       #fff       | 2   |
+| kółko    | #224277 |       #247       | 3   |
+| www      | #41228e |       #428       | 4   |
 
 - bids BIDS_URL = `/search?type=allbids&event=22`;
 - bids CURRENT_BIDS_URL = `/search?type=allbids&event=22&state=OPENED`;

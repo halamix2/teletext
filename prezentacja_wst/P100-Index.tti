@@ -3,16 +3,17 @@ SC,0000
 PS,8000
 CT,8,T
 OL,28,@@P|gpCu_@|wKpZA`UB_wLs_w}ww]_}_wM@@
+OL,26,@rD@ACCCCCCCCCCCCC
 OL,2,T]GO      G S P S     2 0 2 3           
 OL,3,T]G                                     
 OL,4,T]G                                     
-OL,5,T]G  Do tej pory zebrali|my %%%%%% z}   
-OL,6,T]G X]@cznie to  zebrali|my %%%%%% z}   
-OL,7,T]GStart ........................... 100
-OL,8,T]G                                     
-OL,9,V]APrezentacja ..................... 200
-OL,10,T]G                                     
-OL,11,T]GDwa i p_} ....................... 300
+OL,5,T]GMDo tej pory zebrali|my %%%%%%% z}   
+OL,6,T]G                                     
+OL,7,T]G                                     
+OL,8,T]GStart ........................... 100
+OL,9,T]G                                     
+OL,10,VMAPrezentacja ..................... 200
+OL,11,V]                                      
 OL,12,T]G                                     
 OL,13,T]GR_{no|ci ........................ 400
 OL,14,T]G                                     
@@ -21,9 +22,7 @@ OL,16,T]G
 OL,17,T]CStuntAGPG........................ 600
 OL,18,T]G                                     
 OL,19,T]GStrony testowe .................. 700
-OL,20,T]G                                     
-OL,21,T]GQuiz ............................ 800
-OL,22,T]G                                     
-OL,23,XHalamiksie, gdzie ukry}e|CXStuntAXGPGX?
+OL,20,T]                                      
+OL,22,XHalamiksie, gdzie ukry}e|CXStuntAXGPGX?
 OL,24,APrezentacjaBHarmonogramCStunt GPDTesty 
 FL,200,500,600,700,100,100
