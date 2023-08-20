@@ -71,6 +71,10 @@ func (u *Updater) getWalkFunc() fs.WalkDirFunc {
 			// skip dir entries
 			return nil
 		}
+		if filepath.Ext(path) != ".tti" {
+			return nil
+		}
+
 		fmt.Printf("Found %s\n", path)
 
 		err = u.parsePage(path)
