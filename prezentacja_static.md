@@ -57,6 +57,14 @@ header: 898
 ---
 
 <!---
+header: 600
+-->
+
+![bg contain](prezentacja_wst/P600.png)
+
+---
+
+<!---
 header: 899
 -->
 
@@ -177,3 +185,19 @@ header: 301
 -->
 
 ![bg contain](prezentacja_wst/P301.png)
+
+---
+
+<!---
+header: bomus: 500
+-->
+
+![bg contain](prezentacja_wst/P500.png)
+
+---
+
+<!---
+header: bonus: 401
+-->
+
+![bg contain](prezentacja_wst/P401.png)
