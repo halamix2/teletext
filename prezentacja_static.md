@@ -149,6 +149,22 @@ header: 210
 ---
 
 <!---
+header: 211
+-->
+
+![bg contain](prezentacja_wst/P211.png)
+
+---
+
+<!---
+header: 212
+-->
+
+![bg contain](prezentacja_wst/P212.png)
+
+---
+
+<!---
 header: 300
 -->
 
