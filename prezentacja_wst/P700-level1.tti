@@ -1,7 +1,7 @@
 PN,70000
 SC,0000
 PS,8000
-CT,8,T
+CT,5,T
 OL,1,Test level 1                            
 OL,3,  Abcdefghijklmnopqrtuwvxyz             
 OL,4,  `!@_$%^&*()`+{}[]|\-`^                
