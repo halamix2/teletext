@@ -1,7 +1,6 @@
 *.exe
 
 qteletextmaker-0.6-alpha-windows
-tv
-old
 
+#built binary
 /updater
