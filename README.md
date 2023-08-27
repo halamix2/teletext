@@ -1,6 +1,6 @@
 ## Prezentacja o teletekście na GSPS 2023
 
-Prezentacja o WSt przedstawiona na GSPS 2023
+Prezentacja o WST przedstawiona na GSPS 2023
 
 ## Edycja stron
 
@@ -12,6 +12,8 @@ Strony zostały stworzone (i eksportowane do PNG) programem [QTeletextMaker](htt
   - strony prezentacji na Raspberry pi
 - cmd/updater
   - program,który ma generować automatycznie pliki tti z szablonów golanga
+- prezentacja_static
+  - statyczna wersja prezentacji przygotowana w [Marp](https://marp.app/)
 
 # Dokumentacja
 
